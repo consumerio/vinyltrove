@@ -1,0 +1,4 @@
+CN_HOST = 'https://consumernotebook.com'
+CLIENT_ID = 'your-client-id-here'
+CLIENT_SECRET = 'your-client-secret-here'
+REDIRECT_URI = 'your-redirect-uri-here'

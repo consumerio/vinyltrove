@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="row" style="margin-top:20px;">
+            <div class="span6">
+                <h1>vinyltrove</h1>
+                <h2>Manage your vinyl record collection</h2>
+
+                <p>Welcome, {{ nickname }}!</p>
+
+                <p>Vinyltrove is an app for tracking your vinyl record collection.  It's built on top of the Consumer Notebook platform.</p>
+
+                <p>
+                    To start using Vinyltrove, click the button:
+                </p>
+
+                <p>
+                    <a class="btn btn-large btn-primary" href="http://127.0.0.1:8000/oauth2/authorize?client_id=832359a86c10a2b60268&response_type=code&redirect_uri=http://127.0.0.1:8080/manage">Connect with Consumer Notebook</a>
+                </p>
+
+                <div class="well">
+                    <h3>
+                        What happens when I connect?
+                    </h3>
+                    <p>
+                        You'll be prompted to create a free Consumer Notebook account if you don't have one yet.
+                    </p>
+                    <p>
+                        In your Consumer Notebook account, a list called "My Vinyl Records" will be created (unless you've already created one).  
+                    </p>
+                </div>
+            </div>
+            <div class="span6">
+                <h2>About this app</h2>
+                <p>
+                    The code behind Vinyl Record Collection is open-source and runs on Google App Engine.  It's a demo of the kind of app that you can build with the Consumer Notebook API.
+                </p>
+                <p>
+                    You can download, run, and deploy this yourself: just grab the code from <a href="https://github.com/consumernotebook/cn-gae-sample/">https://github.com/consumernotebook/cn-gae-sample/</a> and follow the instructions in the README file.
+                </p>
+                <p>
+                    For more info and code samples, see <a href="http://developers.consumernotebook.com">http://developers.consumernotebook.com</a>.
+                </p>
+            </div>
+    </div>
+</body>
+</html>

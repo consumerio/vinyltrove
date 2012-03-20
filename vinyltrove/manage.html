@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="row" style="margin-top:20px;">
+            <h1>vinyltrove</h1>
+            <h2>Manage your vinyl record collection</h2>
+
+            <p>Welcome, {{ nickname }}!</p>
+
+            <p><a class="btn" href="/add">Add a vinyl record</a></p>
+
+
+            <h2>Your collection</h2>
+            <p>
+                Here are all of your vinyl records:
+            </p>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Album Title</th>
+                        <th>Your Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for record in vinyl_records %}
+                    <tr>
+                        <td>{{ record }}</td>
+                        <td></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+            <h3>About the data</h3>
+
+            <p>
+                The data displayed here is fetched from your Consumer Notebook list called "My Vinyl Records".
+            </p>
+        </div>
+    </div>
+</body>
+</html>
