@@ -30,8 +30,8 @@
                 <tbody>
                 {% for record in vinyl_records %}
                     <tr>
-                        <td>{{ record }}</td>
-                        <td></td>
+                        <td><a href="{{ record.external_url }}">{{ record.title }}</a></td>
+                        <td>{{ record.comment }}</td>
                     </tr>
                 {% endfor %}
                 </tbody>
